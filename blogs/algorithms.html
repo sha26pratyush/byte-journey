@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ByteJourney | Algorithms</title>
+    <link rel="icon" href="../assets/bjFavicon.png" type="image/x-icon">
+    <!--link rel="stylesheet" href="../src/style.css"-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../assets/bjFavicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+            * {
+            margin: 0%;
+            padding: 0%;
+            font-family: "Poppins", sans-serif;
+
+            }
+            .poppins-thin {
+                font-family: "Poppins", sans-serif;
+                font-weight: 100;
+                font-style: normal;
+            }
+
+            .poppins-extralight {
+                font-family: "Poppins", sans-serif;
+                font-weight: 200;
+                font-style: normal;
+            }
+
+            .poppins-light {
+                font-family: "Poppins", sans-serif;
+                font-weight: 300;
+                font-style: normal;
+            }
+
+            .poppins-regular {
+                font-family: "Poppins", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            .poppins-semibold {
+                font-family: "Poppins", sans-serif;
+                font-weight: 600;
+                font-style: normal;
+            }
+
+            .poppins-bold {
+                font-family: "Poppins", sans-serif;
+                font-weight: 700;
+                font-style: normal;
+            }
+
+            /* Text styling starts here */
+            .blog{
+                margin-top: 3%;
+                padding-top: 50x;
+                padding-left: 150px;
+                padding-right: 150px;
+                text-align: center;
+            }
+            .blog-content{
+                margin-top: 7%;
+                padding-top: 50x;
+                padding-left: 250px;
+                padding-right: 250px;
+                text-align: left; 
+            }
+            .blog-content h2{
+                font-size: 22px;
+                font-weight: 300;
+            }
+            .blog-content p{
+                font-size: 18px;
+                font-weight: 300;
+            }
+
+            /*this is footer styling*/
+            footer{
+            background-color: whitesmoke;
+            margin:0px;
+            margin-top: 20px;
+            padding: 35px;
+            padding-top: 80px;
+            display: flex;
+            }
+            footer div{
+            margin: 10px;
+            margin-left: 80px;
+            padding: 10px;
+            }
+            footer div a{
+            text-decoration: none;
+            color: rgb(70,70,70);
+            font-size: 12px;
+            }
+            footer div a:hover{
+            text-decoration: underline;
+            }
+            #social a img{
+            margin: 1px;
+            width:25px;
+            height: auto;
+            padding: 4px;
+            }
+            .material-symbols-outlined{
+            font-size: 28px;
+            color: rgb(252, 148, 148)
+            }
+            /*footer styling ends here*/
+
+
+            /* Target the scrollbar */
+            /* For Firefox */
+            /* For Chrome, Safari, and Opera */
+            /* For Internet Explorer and Edge */
+
+            /* Track */
+            ::-webkit-scrollbar-track,
+            ::-moz-scrollbar-track,
+            ::-ms-scrollbar-track {
+            background-color: #f1f1f1; /* or any color you prefer */
+            }
+
+            /* Handle */
+            ::-webkit-scrollbar-thumb,
+            ::-moz-scrollbar-thumb,
+            ::-ms-scrollbar-thumb {
+            background-color: #888; /* or any color you prefer */
+            }
+
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover,
+            ::-moz-scrollbar-thumb:hover,
+            ::-ms-scrollbar-thumb:hover {
+            background-color: #555; /* or any color you prefer */
+            }
+
+            /* width */
+            ::-webkit-scrollbar {
+            width: 2px;
+            height: 2px;
+            }
+
+            /* Track */
+            ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 10px;
+            }
+
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+            background: black;
+            border-radius: 10px;
+            }
+
+
+    </style>
+  </head>
+  <body>
+
+    <!--nav bar code-->
+    
+    <!--section class="header">
+        <nav>
+            <a href="./index.html"><img src="../assets/ByteJourneyLogoNoBG.png"></a>
+            <div class="nav-links">
+                <ul>
+                  <li><a href="./index.html">HOME</a></li>
+                  <li><a href="./about.html">ABOUT</a></li>
+                  <li><a href="./blogs.html">BLOGS</a></li>
+                  <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section-->
+
+    <div class="blog">
+        <h1 style="font-size: 50px; font-weight: 500;">Beginner's Guide to Algorithms: Understanding the Basics</h1>
+        <hr>
+        <p style="margin: auto; font-size: 22px; font-weight: 300;"><br>Welcome to the Beginner's Guide to Algorithms! In this comprehensive tutorial, we'll explore the fundamental concepts of algorithms, demystify their complexity, and provide practical examples to help you grasp the concepts effectively. Whether you're new to the world of programming or looking to strengthen your understanding of algorithms, this guide is designed to equip you with the knowledge and skills you need to succeed. </p>
+    </div>
+
+    <div class="blog-content">
+        <h2>Table of Contents:</h2>
+        <p><pre>
+            1.  Introduction to Algorithms
+            2.  Understanding Algorithm Efficiency
+            3.  Basic Algorithmic Techniques
+            4.  Famous Figures in Algorithmic Education
+            5.  Practical Examples and Exercises
+            6.  Conclusion and Further Learning Resources
+        </pre></p>
+        <h2>Introduction to Algorithms</h2>
+        <p>What are Algorithms?<br>
+            An algorithm is a step-by-step procedure or set of instructions designed to solve a specific problem or perform a particular task. Think of it as a recipe: just as a recipe provides a sequence of steps to follow in order to cook a meal, an algorithm provides a sequence of steps to follow in order to solve a problem.</p>
+        <br>
+        <p>Importance of Algorithms<br>
+            Algorithms form the foundation of computer science and are essential for solving complex problems efficiently. They are used in various applications, including search engines, data analysis, machine learning, and more. Understanding algorithms is crucial for becoming a proficient programmer and solving real-world problems effectively.
+        <br>
+        <br>
+        <br>
+        <h2>Understanding Algorithm Efficiency</h2>
+        <p>Time Complexity<br>
+            Time complexity measures the amount of time an algorithm takes to complete as a function of the size of its input. It helps us understand how the algorithm's performance scales with increasing input size. Common time complexity notations include O(1), O(log n), O(n), O(n log n), O(n^2), and more.
+        <br>
+        <br>
+        <p>Space Complexity<br>
+            Space complexity measures the amount of memory an algorithm requires as a function of the size of its input. It helps us understand how much memory the algorithm consumes relative to the input size. Similar to time complexity, space complexity is often expressed using Big O notation.
+            
+        <br>
+        <br>
+        <br>
+        <h2>Basic Algorithmic Techniques</h2>
+        <p>Brute Force<br>
+            Brute force is a straightforward approach to solving a problem by systematically trying all possible solutions and selecting the best one. While it may not be the most efficient approach, it is often used as a starting point for solving complex problems.
+        <br>
+        <br>
+        <p>Divide and Conquer<br>
+            Divide and conquer is a recursive algorithmic technique that involves breaking down a problem into smaller subproblems, solving them independently, and then combining their solutions to solve the original problem. Examples include binary search and merge sort.
+    
+        <br>
+        <br>
+        <p>Dynamic Programming<br>
+            Dynamic programming is a method for solving complex problems by breaking them down into simpler subproblems and solving each subproblem only once. It is particularly useful for problems with overlapping subproblems, as it avoids redundant computations.
+    
+        <br>
+        <br>
+        <br>
+        <h2>Famous Figures in Algorithmic Education</h2>
+        <p>Donald Knuth<br>
+            Donald Knuth is a pioneering computer scientist known for his work on algorithms, particularly his multi-volume series "The Art of Computer Programming." His books are considered classics in the field and are widely regarded as essential reading for anyone interested in algorithms.
+        <br>
+        <br>
+        <p>Cormen, Leiserson, Rivest, and Stein<br>
+            Commonly referred to as CLRS, Cormen, Leiserson, Rivest, and Stein are the authors of "Introduction to Algorithms," a widely used textbook in undergraduate and graduate courses on algorithms. The book covers a wide range of topics and is praised for its clear explanations and comprehensive coverage.
+    
+
+        <br>
+        <br>
+        <br>
+        <h2>Practical Examples and Exercises</h2>
+        <p>Example: Finding the Maximum Element in an Array<br>
+            <pre>
+                def find_max(arr):
+                max_element = arr[0]
+                for num in arr:
+                if num > max_element:
+                max_element = num
+                return max_element
+
+                Answer:
+                arr = [3, 7, 2, 8, 5]
+                print("Maximum element:", find_max(arr))
+                
+                Output: 8
+            </pre>
+        <br>
+        <p>Exercise: Implement Binary Search<br>
+            Write a Python function to perform binary search on a sorted array and return the index of the target element if found, or -1 if not found.
+            <br><img style="height: 300px; width: 500px" src="./assets-blogs/code-algorithms.png" alt="code-snippet">
+
+            <br>
+            <br>
+            <h2>Conclusion and Further Learning Resources</h2>
+            <p>Congratulations! You've now gained a solid understanding of the basics of algorithms. To continue your learning journey, consider exploring more advanced algorithmic techniques, participating in coding competitions such as LeetCode or Codeforces, and reading additional books and resources on algorithms.<br>
+                <br>Remember, mastering algorithms takes time and practice, so don't be discouraged if you encounter challenges along the way. Keep learning, keep coding, and enjoy the journey of becoming a proficient programmer!
+            
+            
+    </div>
+
+<!--- Footer starts here-->
+    <!--footer>
+      <div>
+        <a href="./index.html"><img src="../assets/ByteJourneyLogoNoBG.png" alt="logo" style="width: 180px; height: auto;"> </a>
+        <h5 style="font-weight: 400; font-size: 16px;">Project with <span class="material-symbols-outlined" style="position: relative; top: 7px;">
+            favorite </span> by Team <b>WebWeave.</b><h5>
+        <p style="font-size: 12px; font-weight: 300;">&copy; 2024 ByteJourney. All rights reserved. <sup>&trade;</sup></p>
+      </div>
+      <div>
+        <a href="./index.html">Home</a><br>
+        <a href="./blogs.html">Read blogs</a><br>
+        <a href="./">Careers</a><br>
+        <a href="./">Subscribe to our newsletter</a>
+      </div>
+      <div>
+        <a href="./about.html">Know about us</a><br>
+        <a href="./contact.html">Get a word from us</a>
+      </div>
+      <div id="social">
+        <a href="https://www.instagram.com/bytejourney4/"><img src="../assets/social-ig.png"></a>
+        <a href="https://twitter.com/JourneyByte"><img src="../assets/social-x.png"></a>
+        <a href="https://github.com/sha26pratyush/internal-webdev-project"><img src="../assets/social-github.png"></a>
+        <a href="https://www.snapchat.com/add/bytejourney?share_id=YwELkrH9y6g&locale=en-IN"><img src="../assets/social-snap.png"></a>
+      </div>
+    </footer>
+        - Footer ends here-->
+
+  </body>
+</html>
