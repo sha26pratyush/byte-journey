@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ByteJourney | About Us</title>
+    <link rel="icon" href="../assets/bjFavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../assets/bjFavicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+    main{
+      margin:0px;
+      padding:50px;
+    }
+    .first-about-box{
+      padding-left: 30%;
+      padding-right: 7%;
+    }
+    .first-about-box h1{
+      font-size: 48px;
+    }
+    main img{
+      margin:5px;
+      margin-top: 30px;
+      border-radius: 1%;
+    }
+    #quote-box{
+      margin: 100px 5px;
+      padding-top: 30px;
+      display: flex;
+      width:95%;
+    }
+    #quote-box div{
+      padding: 30px;
+      width: 50%;
+      color: rgb(10,10,10);
+    }
+    #quote-box div h1{
+      margin: 5px;
+      font-size: 72px;
+      text-align: right;
+    }
+    #quote-box-div-2{
+      border-left: 2px solid black;padding-right:7%;
+    }
+    #third-about-box{
+      margin: 100px 5px;
+      margin-top: 80px;
+      margin-left: 100px;
+      padding: 40px;
+      width:60%;
+      text-align: left;
+      background-color: wheat;
+      width:70%;
+    }
+    #third-about-box h1{
+      font-size: 64px;
+    }
+    .material-symbols-outlined{
+      font-size: 28px;
+      color: rgb(252, 148, 148)
+    }
+
+    footer  {
+    background-color: whitesmoke;
+    margin:0px;
+    margin-top: 20px;
+    padding: 35px;
+    padding-top: 80px;
+    display: flex;
+    }
+    footer div{
+    margin: 10px;
+    margin-left: 80px;
+    padding: 10px;
+    }
+    footer div a{
+    text-decoration: none;
+    color: rgb(70,70,70);
+    font-size: 12px;
+    }
+    footer div a:hover{
+    text-decoration: underline;
+    }
+    #social a img{
+    margin: 1px;
+    width:25px;
+    height: auto;
+    padding: 4px;
+    }
+    /*footer styling ends here*/
+
+
+    /* Target the scrollbar */
+    /* For Firefox */
+    /* For Chrome, Safari, and Opera */
+    /* For Internet Explorer and Edge */
+
+    /* Track */
+    ::-webkit-scrollbar-track,
+    ::-moz-scrollbar-track,
+    ::-ms-scrollbar-track {
+      background-color: #f1f1f1; /* or any color you prefer */
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb,
+    ::-moz-scrollbar-thumb,
+    ::-ms-scrollbar-thumb {
+      background-color: #888; /* or any color you prefer */
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover,
+    ::-moz-scrollbar-thumb:hover,
+    ::-ms-scrollbar-thumb:hover {
+      background-color: #555; /* or any color you prefer */
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+     width: 2px;
+     height: 2px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+     box-shadow: inset 0 0 5px grey;
+     border-radius: 10px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+     background: black;
+     border-radius: 10px;
+    }
+
+    #menuBtn{
+      display: none;
+      margin: 0px;
+      padding: 0px;
+      background: inherit;
+      border-style: none;
+    }
+    #menuBtnn{
+      display: none;
+      margin: 0px;
+      padding: 0px;
+      background: inherit;
+      border-style: none;
+    }
+
+    @media (min-width: 320px) and (max-width: 810px){
+      .header #navlinks{
+        display: none;
+      }
+      #menuBtn{
+        display: block;
+      }
+      .material-symbols-outlined{
+        color: black;
+      }
+      footer{
+        display: block;
+      }
+      footer div{
+        margin-left:30px;
+      }
+      .first-about-box{
+        padding: 30px;
+        margin: 10px;
+      }
+      .first-about-box h1{
+        font-size: 28px;
+      }
+      .first-about-box p {
+        font-size: 16px;
+      }
+      #quote-box{
+        display: block;
+        align-items: center;
+        width: 100%;
+        margin-left: 40px;
+
+      }
+      #quote-box div{
+        border-style: none;
+        margin:10px;
+      }
+      #quote-box div h1{
+        font-size: 28px;
+        text-align: left;
+      }
+      #quote-box-div-2 p{
+        font-size: 16px;
+      }
+      #third-about-box{
+        margin-left: 40px;
+        padding-left: 40px;
+      }
+
+    }
+
+
+
+
+
+
+
+    </style>
+    <script>
+    function menuOpen(){
+      document.getElementById('menuBtn').style.display = "none";
+      document.getElementById('navlinks').style.display = "block";
+      document.getElementById('menuBtnn').style.display = "block";
+    }
+
+    function menuClose(){
+      document.getElementById('menuBtn').style.display = "block";
+      document.getElementById('navlinks').style.display = "none";
+      document.getElementById('menuBtnn').style.display = "none";
+    }
+
+    </script>
+  </head>
+  <body>
+    <!--nav bar code-->
+    <section class="header">
+        <nav>
+            <a href="./index.html"><img src="../assets/ByteJourneyLogoNoBG.png"></a>
+            <div class="nav-links" id="navlinks">
+                <ul>
+                  <li><a href="./index.html">HOME</a></li>
+                  <li><a href="./about.html">ABOUT</a></li>
+                  <li><a href="./blogs.html">BLOGS</a></li>
+                  <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <button id="menuBtn" onmousedown="menuOpen()"><span class="material-symbols-outlined">menu</span></button>
+            <button id="menuBtnn" onmousedown="menuClose()"><span class="material-symbols-outlined">
+snowing_heavy
+</span></button>
+        </nav>
+        <main>
+          <div class="first-about-box">
+            <h1>ABOUT US.</h1>
+            <p style="font-size: 18px;"><br>Welcome to ByteJourney, your ultimate destination for all things computers! <br> At ByteJourney, we believe in the power of words to connect, inspire, and inform. Whether you're a seasoned developer looking for fresh insights or a beginner eager to embark on your computer science journey, we're here to support you every step of the way.</p>
+            <br>
+            <h2>Our Mission</h2>
+            <p>Our mission is simple: to provide a platform where computer enthusiasts of all levels can come together to share their stories, ideas, and expertise. We strive to foster a vibrant community where creativity thrives, and where every voice is heard and valued.</p>
+          </div>
+          <!--
+          <center>
+            <img src="../assets/about-workspace.jpg" alt="workspace-image" width="90%" height="400px">
+          </center>
+        -->
+
+        </main>
+    </section>
+    <section id="quote-box">
+      <div>
+        <h1>What We Offer</h1>
+      </div>
+      <div id="quote-box-div-2">
+        <p><b>Inspiring Content:</b> Dive into a treasure trove of articles, guides, and tutorials designed to help you hone your blogging skills, expand your audience, and unleash your creativity.</p>
+        <p><b>Community Engagement:</b> Join our community forums to connect with fellow bloggers, exchange ideas, seek advice, and collaborate on projects.</p>
+        <p><b>Resources and Tools:</b> Access a curated selection of resources and tools to streamline your blogging process, from content creation to promotion and monetization.</p>
+      </div>
+    </section>
+
+    <section id="third-about-box">
+      <h1>Get in Touch</h1>
+      <p>We love hearing from our community! Whether you have feedback, questions, or just want to say hello, don't hesitate to reach out to us at <b>webweave875@gmail.com</b>.<br><br>Join us on this exciting blogging adventure, and let's inspire the world, one word at a time!</p>
+    </section>
+
+    <footer>
+      <div>
+        <a href="./index.html"><img src="../assets/ByteJourneyLogoNoBG.png" alt="logo" style="width: 180px; height: auto;"> </a>
+        <h5 style="font-weight: 400; font-size: 16px;">Project with <span class="material-symbols-outlined" style="position: relative; top: 7px;">
+            favorite </span> by Team <b>WebWeave.</b><h5>
+        <p style="font-size: 12px; font-weight: 300;">&copy; 2024 ByteJourney. All rights reserved. <sup>&trade;</sup></p>
+      </div>
+      <div>
+        <a href="./index.html">Home</a><br>
+        <a href="./blogs.html">Read blogs</a><br>
+        <a href="./">Careers</a><br>
+        <a href="./">Subscribe to our newsletter</a>
+      </div>
+      <div>
+        <a href="./about.html">Know about us</a><br>
+        <a href="./contact.html">Get a word from us</a>
+      </div>
+      <div id="social">
+        <a href="https://www.instagram.com/bytejourney4/"><img src="../assets/social-ig.png"></a>
+        <a href="https://twitter.com/JourneyByte"><img src="../assets/social-x.png"></a>
+        <a href="https://github.com/sha26pratyush/internal-webdev-project"><img src="../assets/social-github.png"></a>
+        <a href="https://www.snapchat.com/add/bytejourney?share_id=YwELkrH9y6g&locale=en-IN"><img src="../assets/social-snap.png"></a>
+      </div>
+    </footer>
+</body>
+</html>

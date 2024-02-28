@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ByteJourney | Read Blogs</title>
+    <link rel="icon" href="../assets/bjFavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../assets/bjFavicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+
+    /*this is footer styling*/
+    footer{
+    background-color: whitesmoke;
+    margin:0px;
+    margin-top: 20px;
+    padding: 35px;
+    padding-top: 80px;
+    display: flex;
+    }
+    footer div{
+    margin: 10px;
+    margin-left: 80px;
+    padding: 10px;
+    }
+    footer div a{
+    text-decoration: none;
+    color: rgb(70,70,70);
+    font-size: 12px;
+    }
+    footer div a:hover{
+    text-decoration: underline;
+    }
+    #social a img{
+    margin: 1px;
+    width:25px;
+    height: auto;
+    padding: 4px;
+    }
+    .material-symbols-outlined{
+    font-size: 28px;
+    color: rgb(252, 148, 148)
+    }
+    /*footer styling ends here*/
+
+
+    /* Target the scrollbar */
+    /* For Firefox */
+    /* For Chrome, Safari, and Opera */
+    /* For Internet Explorer and Edge */
+
+    /* Track */
+    ::-webkit-scrollbar-track,
+    ::-moz-scrollbar-track,
+    ::-ms-scrollbar-track {
+      background-color: #f1f1f1; /* or any color you prefer */
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb,
+    ::-moz-scrollbar-thumb,
+    ::-ms-scrollbar-thumb {
+      background-color: #888; /* or any color you prefer */
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover,
+    ::-moz-scrollbar-thumb:hover,
+    ::-ms-scrollbar-thumb:hover {
+      background-color: #555; /* or any color you prefer */
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+     width: 2px;
+     height: 2px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+     box-shadow: inset 0 0 5px grey;
+     border-radius: 10px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+     background: black;
+     border-radius: 10px;
+    }
+
+    .navSec{
+      background-image: url('../assets/LightTheme.jpg');
+      background-size: cover;
+      background-position: center center;
+    }
+    /*
+    nav{
+      padding: 15px 50px;
+    }
+    */
+    /*blog styling*/
+    #blog{
+      background-color: white; /*CHANGE AS PER NEED*/
+      margin: 0%;
+      padding: 5%;
+      display: flex;
+    }
+    #blog p{
+      font-size: 12px;
+    }
+    #blog div {
+      margin:1%;
+      padding:3%;
+      background-color: white; /*CHANGE AS PER NEED*/
+    }
+    #blogBox{
+      width: 60%;
+      min-height: 500px;
+    }
+
+    /*side box styling*/
+    #moreBlogBox{
+      width: 30%;
+    }
+    #moreBlogBox .relatedBlogs{
+      background-color: inherit;
+      padding: 10px 0px;
+      margin: 10px 0px;
+
+    }
+    #moreBlogBox .relatedBlogs .flexBox {
+      display: flex;
+      margin: 0%;
+      padding: 0%;
+    }
+    #moreBlogBox .relatedBlogs .flexBox a {
+      margin-right: 1%;
+      text-decoration: none;
+      color: black;
+    }
+    #moreBlogBox .relatedBlogs .flexBox a:hover{
+      text-decoration: underline;
+    }
+
+    /*collage box styling*/
+    #blogBox{ /*lower margin and padding*/
+      display: flex;
+    }
+    #bigBox{ /*lower margin and padding*/
+      width: 60%;
+    }
+    #smallBox{ /*lower margin and padding*/
+      width: 30%;
+    }
+    .nBlog { /*lower margin and padding*/
+    }
+    .nBlog a {
+      text-decoration: none;
+      color: black;
+    }
+    .nBlog a:hover{
+      text-decoration: underline;
+    }
+
+
+    #menuBtn{
+      display: none;
+      margin: 0px;
+      padding: 0px;
+      background: inherit;
+      border-style: none;
+    }
+    #menuBtnn{
+      display: none;
+      margin: 0px;
+      padding: 0px;
+      background: inherit;
+      border-style: none;
+    }
+
+
+    @media (min-width: 320px) and (max-width: 810px) {
+      .navSec #navlinks{
+        display: none;
+      }
+      #menuBtn{
+        display: block;
+      }
+      .material-symbols-outlined{
+        color: black;
+      }
+      footer{
+        display: block;
+      }
+      footer div{
+        margin-left:30px;
+      }
+
+      #blog{
+        display: block;
+      }
+      #blogBox{
+        width: 100%;
+        display: block;
+      }
+      #moreBlogBox{
+        width: 90%;
+      }
+      #bigBox{
+        width: 80%;
+      }
+      #smallBox{
+        width: 80%;
+      }
+    }
+    </style>
+    <script>
+    function menuOpen(){
+      document.getElementById('menuBtn').style.display = "none";
+      document.getElementById('navlinks').style.display = "block";
+      document.getElementById('menuBtnn').style.display = "block";
+    }
+
+    function menuClose(){
+      document.getElementById('menuBtn').style.display = "block";
+      document.getElementById('navlinks').style.display = "none";
+      document.getElementById('menuBtnn').style.display = "none";
+    }
+
+    </script>
+  </head>
+  <body>
+    <!--nav bar code-->
+    <section class="navSec"> <!--removed class-->
+        <nav>
+            <a href="./index.html"><img src="../assets/ByteJourneyLogoNoBG.png"></a>
+            <div class="nav-links" id="navlinks">
+                <ul>
+                  <li><a href="./index.html">HOME</a></li>
+                  <li><a href="./about.html">ABOUT</a></li>
+                  <li><a href="./blogs.html">BLOGS</a></li>
+                  <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <button id="menuBtn" onmousedown="menuOpen()"><span class="material-symbols-outlined">menu</span></button>
+            <button id="menuBtnn" onmousedown="menuClose()"><span class="material-symbols-outlined">
+snowing_heavy
+</span></button>
+        </nav>
+    </section>
+
+    <!--blog layout starts here-->
+    <main>
+      <div id="blog"> <!--this is main div box; it has two divs within-->
+
+        <!--collage box-->
+        <div id="blogBox">
+          <div id="bigBox">
+
+            <!--link 1st blog-->
+            <div class="nBlog">
+              <img src="../assets/DarkTheme2.jpg" alt="some image" width="100%" height="auto">
+              <p>label/genre</p>
+              <br>
+              <a href="">
+              <h5>The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software.</h5>
+              </a>
+            </div>
+
+            <!--link 2nd blog-->
+            <div class="nBlog">
+              <img src="../assets/DarkTheme2.jpg" alt="some image" width="100%" height="auto">
+              <p>label/genre</p>
+              <br>
+              <a href="">
+              <h5>The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software.</h5>
+              </a>
+            </div>
+
+            <!--link 3rd blog-->
+            <div class="nBlog">
+              <img src="../assets/DarkTheme2.jpg" alt="some image" width="100%" height="auto">
+              <p>label/genre</p>
+              <br>
+              <a href="">
+              <h5>The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software.</h5>
+              </a>
+            </div>
+            <!--link more blogs if needed-->
+
+          </div>
+
+          <div id="smallBox">
+            <!--link 1st blog-->
+            <div class="nBlog">
+              <img src="../assets/DarkTherme.jpg" alt="some image" width="100%" height="auto">
+              <p>label/genre</p>
+              <br>
+              <a href="">
+              <h5>The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets.</h5>
+              </a>
+            </div>
+            <!--link 2nd blog-->
+            <div class="nBlog">
+              <img src="../assets/LightTheme.jpg" alt="some image" width="100%" height="auto">
+              <p>label/genre</p>
+              <br>
+              <a href="">
+              <h5>The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets.</h5>
+              </a>
+            </div>
+            <!--link more blogs if needed-->
+          </div>
+        </div>
+
+        <!--side box-->
+        <div id="moreBlogBox">
+
+          <!--static text-->
+          <h2>Lorem ipsum dolor sit amet</h2>
+          <hr><br>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+          <br>
+
+          <!--more blogs go here-->
+          <h2>Related Content</h2>
+          <hr><br>
+          <!--blog 1 link-->
+          <div class="relatedBlogs">
+            <p>labels/genre<p>
+            <br>
+            <div class="flexBox">
+              <!--link it-->
+              <a href="">
+              <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
+              </a>
+              <img src="../assets/about-typewriter.jpg" alt="some image" width="120px" height="auto">
+            </div>
+          </div>
+          <!--blog 2 link-->
+          <div class="relatedBlogs">
+            <p>labels/genre<p>
+            <br>
+            <div class="flexBox">
+              <!--link it-->
+              <a href="">
+              <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
+              </a>
+              <img src="../assets/about-typewriter.jpg" alt="some image" width="120px" height="auto">
+            </div>
+          </div>
+          <!--blog 3 link-->
+          <div class="relatedBlogs">
+            <p>labels/genre<p>
+            <br>
+            <div class="flexBox">
+              <!--link it-->
+              <a href="">
+              <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
+              </a>
+              <img src="../assets/about-typewriter.jpg" alt="some image" width="120px" height="auto">
+            </div>
+          </div>
+          <!--link more blogs if needed-->
+
+        </div>
+
+      </div>
+    </main>
+
+
+    <footer>
+      <div>
+        <a href="./index.html"><img src="../assets/ByteJourneyLogoNoBG.png" alt="logo" style="width: 180px; height: auto;"> </a>
+        <h5 style="font-weight: 400; font-size: 16px;">Project with <span class="material-symbols-outlined" style="position: relative; top: 7px;">
+            favorite </span> by Team <b>WebWeave.</b><h5>
+        <p style="font-size: 12px; font-weight: 300;">&copy; 2024 ByteJourney. All rights reserved. <sup>&trade;</sup></p>
+      </div>
+      <div>
+        <a href="./index.html">Home</a><br>
+        <a href="./blogs.html">Read blogs</a><br>
+        <a href="./">Careers</a><br>
+        <a href="./">Subscribe to our newsletter</a>
+      </div>
+      <div>
+        <a href="./about.html">Know about us</a><br>
+        <a href="./contact.html">Get a word from us</a>
+      </div>
+      <div id="social">
+        <a href="https://www.instagram.com/bytejourney4/"><img src="../assets/social-ig.png"></a>
+        <a href="https://twitter.com/JourneyByte"><img src="../assets/social-x.png"></a>
+        <a href="https://github.com/sha26pratyush/internal-webdev-project"><img src="../assets/social-github.png"></a>
+        <a href="https://www.snapchat.com/add/bytejourney?share_id=YwELkrH9y6g&locale=en-IN"><img src="../assets/social-snap.png"></a>
+      </div>
+    </footer>
+  </body>
+</html>
