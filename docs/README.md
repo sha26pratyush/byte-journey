@@ -26,11 +26,11 @@ Access a curated selection of resources and tools to streamline your blogging pr
 
 - **assets**: Contains all images and other necessary assets.
 - **docs**: Documentation for the project.
-- **src**: Source code for the ByteJourney platform.
+- **blogs**: Contains all blog content and webpages.
 
 ## Contribution
 
-Interested in contributing? Check out our [contribution guidelines](./CONTRIBUTOR.md) to get started.
+Interested in contributing? Check out our [contribution guidelines](./CONTRIBUTING.md) to get started.
 
 ## Getting Started
 
@@ -48,6 +48,6 @@ Interested in contributing? Check out our [contribution guidelines](./CONTRIBUTO
 
 This project is licensed under the [MIT License](./LICENSE). Feel free to explore, contribute, and share!
 
-For more details, check out our [Contributor Guidelines](./CONTRIBUTOR.md).
+For more details, check out our [Contributor Guidelines](./CONTRIBUTING.md).
 
 Happy coding!
