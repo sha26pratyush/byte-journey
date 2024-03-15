@@ -1,6 +1,30 @@
-# ByteJourney
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="../assets/ByteJourneyLogoWithBG.png">
+    <img alt="ByteJourney logo" src="../assets/ByteJourneyLogoWithBG.png" width="40%">
+  </picture>
+</div>
+<br><br>
 
-Welcome to ByteJourney, your ultimate destination for all things computers!
+<div align="center">
+
+[![License](https://img.shields.io/badge/License-MIT--License-blue)](#license)
+[![Issues - ByteJourney](https://img.shields.io/github/issues/sha26pratyush/byte-journey)](https://github.com/sha26pratyush/byte-journey/issues)
+</div>
+
+
+<h1 align="center">ByteJourney is your ultimate destination for all things computers!</h1>
+</br>
+
+
+<p align="center">
+    <a href="https://github.com/sha26pratyush/byte-journey/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/sha26pratyush/byte-journey/issues">Request Feature</a>
+    ·
+    <a href="https://twitter.com/JourneyByte">Twitter</a>
+  </p>
+
 
 ## Project Overview
 
